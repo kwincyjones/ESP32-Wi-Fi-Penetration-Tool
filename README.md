@@ -21,13 +21,13 @@ Obviously cracking is not part of this project, as the ESP32 is not sufficient t
 - And more...
 
 # Usage
-1. [Build](#Build) and [Flash](#Flashing) project onto an ESP32 (DevKit or module)
-1. Reset and power the ESP32 module
-1. The management AP will be started automatically after boot
-1. Connect to this AP\
+1) [Build](#Build) and [Flash](#Flashing) project onto an ESP32 (DevKit or module)
+2) Power the ESP32 module and press the Reset button. If you're using a Flipper Zero Wifi Dev board this is done VIA the GPIO of the Flipper Zero
+3) The management AP will be started automatically after boot
+4) Connect to this AP\
 **Default Configuration:**\
 ***SSID:*** `ManagementAP` and the ***password**:* `mgmtadmin`
-1. In a web browser navigate to `192.168.4.1` and you should see a web client to configure and control tool like this:
+5) In a web browser navigate to `192.168.4.1` and you should see a web client to configure and control tool like this:
     
 ![Web client UI](doc/images/ui-config.png)
 
@@ -53,8 +53,8 @@ The legacy method using `make` is not supported by this project.
 ## Prebuilt Binaries
 The easiest method of flashing is using the pre-built binaries included in the release section
 1) Download the appropriate release for your OS from the [`latest releases`](https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool/releases/new)
-2) Put you ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
-3) Run the included flashing script within the ZIP file for **Linux** and **Mac** this is `Flash.sh` for **Windows** this is `Flash.bat`
+2) Put your ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
+3) Run the included flashing script within the ZIP file. For **Linux** and **Mac** this is `Flash.sh` and for **Windows** this is `Flash.bat`
 4) Continue to Step 2 in [Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
 
 ## Manual Methods of Flashing 
