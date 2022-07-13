@@ -1,0 +1,5 @@
+# Ignore ALL files in the Build Directory
+build/
+
+# Ignore the SDKConfig file
+*sdkconfig*
