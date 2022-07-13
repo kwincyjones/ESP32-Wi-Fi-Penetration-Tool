@@ -28,7 +28,8 @@ Obviously cracking is not part of this project, as the ESP32 is not sufficient t
 **Default Configuration:**\
 ***SSID:*** `ManagementAP` and the ***password**:* `mgmtadmin`
 1. In a web browser navigate to `192.168.4.1` and you should see a web client to configure and control tool like this:
-    ![Web client UI](doc/images/ui-config.png)
+    
+![Web client UI](doc/images/ui-config.png)
 
 # Build
 - This project is currently developed using **ESP-IDF 4.1** (commit `5ef1b390026270503634ac3ec9f1ec2e364e23b2`). 
