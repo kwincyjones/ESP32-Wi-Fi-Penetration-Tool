@@ -21,7 +21,7 @@ Obviously cracking is not part of this project, as the ESP32 is not sufficient t
 - And more...
 
 # Usage
-1. [Build](#Build) and [Flash](#Flash) project onto an ESP32 (DevKit or module)
+1. [Build](#Build) and [Flash](#Flashing) project onto an ESP32 (DevKit or module)
 1. Reset and power the ESP32 module
 1. The management AP will be started automatically after boot
 1. Connect to this AP\
@@ -54,7 +54,7 @@ The easiest method of flashing is using the pre-built binaries included in the r
 1) Download the appropriate release for your OS from the latest releases
 2) Put you ESP32 into download mode by holding the **BOOT** button while plugging it into the PC. 
 3) Run the included flashing script within the ZIP file for **Linux** this is `Flash.sh` for **Windows** this is `Flash.bat`
-4) Continue to [Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
+4) Continue to Step 2 in [Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
 
 ## Manual Methods of Flashing 
 - The below methods really aren't neccesary. With the included flashing scripts in the release section you can easily flash your own builds;however the instructions are here if you want to follow them. :) 
