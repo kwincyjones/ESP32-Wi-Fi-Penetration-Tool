@@ -51,9 +51,9 @@ The legacy method using `make` is not supported by this project.
 
 ## Prebuilt Binaries
 The easiest method of flashing is using the pre-built binaries included in the release section
-1) Download the appropriate release for your OS from the latest releases
-2) Put you ESP32 into download mode by holding the **BOOT** button while plugging it into the PC. 
-3) Run the included flashing script within the ZIP file for **Linux** this is `Flash.sh` for **Windows** this is `Flash.bat`
+1) Download the appropriate release for your OS from the [`latest releases`](https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool/releases/new)
+2) Put you ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
+3) Run the included flashing script within the ZIP file for **Linux** and **Mac** this is `Flash.sh` for **Windows** this is `Flash.bat`
 4) Continue to Step 2 in [Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
 
 ## Manual Methods of Flashing 
