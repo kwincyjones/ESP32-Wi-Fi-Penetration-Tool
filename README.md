@@ -21,13 +21,13 @@ Obviously cracking is not part of this project, as the ESP32 is not sufficient t
 - And more...
 
 # Usage
-1) [Build](#Build) and [Flash](#Flashing) project onto an ESP32 (DevKit or module)
+1) [Build](#Build) and [Flash](#Flashing) the project onto an ESP32 (DevKit or module)
 2) Power the ESP32 module and press the Reset button. If you're using a Flipper Zero Wifi Dev board this is done VIA the GPIO of the Flipper Zero
 3) The management AP will be started automatically after boot
 4) Connect to this AP\
 **Default Configuration:**\
 ***SSID:*** `ManagementAP` and the ***password**:* `mgmtadmin`
-5) In a web browser navigate to `192.168.4.1` and you should see a web client to configure and control tool like this:
+5) In a web browser navigate to `192.168.4.1` and you should see a web client to configure and control tool that looks like this:
     
 ![Web client UI](doc/images/ui-config.png)
 
