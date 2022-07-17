@@ -13,7 +13,6 @@ goto start
 
 :DevBoard
 echo Generating a Flipper Zero Wifi Devboard (ESP32-S2) Release 
-pause
 for %%h in (ESP32-S2-FlipperZeroWifiDevBoard-Linux ESP32-S2-FlipperZeroWifiDevBoard-Mac ESP32-S2-FlipperZeroWifiDevBoard-Windows) do (
 copy /Y .\build\bootloader\bootloader.bin .\Release\Generated\%%h\FW\
 copy /Y .\build\partition_table\partition-table.bin .\Release\Generated\%%h\FW\
@@ -29,6 +28,8 @@ copy /Y .\build\partition_table\partition-table.bin .\Release\Generated\%%h\FW\
 copy /Y .\build\esp32-wifi-penetration-tool.bin .\Release\Generated\%%h\FW\
 )
 goto end
+
 :end
+echo Release generated
 pause
 exit
