@@ -57,6 +57,8 @@ The easiest method of flashing is using the pre-built binaries included in the r
 3) Run the included flashing script within the ZIP file. For **Linux** and **Mac** this is `Flash.sh` and for **Windows** this is `Flash.bat`
 4) Continue to [Step 2 in Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
 
+***Some anti-virus programs will detect the ESPTool as a virus and remove it. It is 100% safe however if you would prefer you can get the origianl from Espressif's github. [ESPTool Download](https://github.com/espressif/esptool/releases/)***
+
 ## Manual Methods of Flashing 
 - The below methods really aren't neccesary. With the included flashing scripts in the release section you can easily flash your own builds;however the instructions are here if you want to follow them. :) 
 
