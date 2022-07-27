@@ -69,7 +69,7 @@ More information can be here:*** [False Unhandled Exception Error on Windows 11]
 2) Ensure you set ESPTool as executable by running `chmod +x ./esptool` from the directory you extracted the release to. 
 3) Ensure you set flash.sh as executable by running `chmod +x ./flash.sh` from the directory you extracted the release to. 
 4) Put your ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
-5) Run the included flashing script `flash.sh`
+5) Run the included flashing script VIA `./flash.sh`
 6) Continue to [Step 2 in Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
 
 ### Mac
@@ -77,7 +77,7 @@ More information can be here:*** [False Unhandled Exception Error on Windows 11]
 2) Ensure you set ESPTool as executable by running `chmod +x ./esptool` from the directory you extracted the release to. 
 3) Ensure you set flash.sh as executable by running `chmod +x ./flash.sh` from the directory you extracted the release to. 
 4) Put your ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
-5) Run the included flashing script `flash.sh`
+5) Run the included flashing script `./flash.sh`
 6) Continue to [Step 2 in Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
 
 ## Manual Methods of Flashing 
