@@ -52,12 +52,33 @@ The legacy method using `make` is not supported by this project.
 
 ## Prebuilt Binaries
 The easiest method of flashing is using the pre-built binaries included in the release section
-1) Download the appropriate release for your OS from the [`latest releases`](https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool/releases/)
-2) Put your ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
-3) Run the included flashing script within the ZIP file. For **Linux** and **Mac** this is `Flash.sh` and for **Windows** this is `Flash.bat`
-4) Continue to [Step 2 in Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
 
 ***Some anti-virus programs will detect the ESPTool as a virus and remove it. It is 100% safe however if you would prefer you can get the original from Espressif's github. [ESPTool Download](https://github.com/espressif/esptool/releases/)***
+
+### Windows
+1) Download the appropriate release for your OS from the [`latest releases`](https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool/releases/) and extract the ZIP contents to a folder 
+2) Put your ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
+4) Run the included `flash.bat` script within the ZIP file.
+5) Continue to [Step 2 in Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
+
+**KNOWN ISSUE:** ***Windows 11 will display a false unhandled exception error. This can be ignored the firmware will still flash to the ESP32 successfully 
+More information can be here:*** [False Unhandled Exception Error on Windows 11](https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool/issues/2)
+
+### Linux
+1) Download the appropriate release for your OS from the [`latest releases`](https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool/releases/) and extract the ZIP contents to a folder 
+2) Ensure you set ESPTool as executable by running `chmod +x ./esptool` from the directory you extracted the release to. 
+3) Ensure you set flash.sh as executable by running `chmod +x ./flash.sh` from the directory you extracted the release to. 
+4) Put your ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
+5) Run the included flashing script `flash.sh`
+6) Continue to [Step 2 in Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
+
+### Mac
+1) Download the appropriate release for your OS from the [`latest releases`](https://github.com/FroggMaster/ESP32-Wi-Fi-Penetration-Tool/releases/) and extract the ZIP contents to a folder 
+2) Ensure you set ESPTool as executable by running `chmod +x ./esptool` from the directory you extracted the release to. 
+3) Ensure you set flash.sh as executable by running `chmod +x ./flash.sh` from the directory you extracted the release to. 
+4) Put your ESP32 into download mode by holding the **BOOT** button while plugging it into the PC.
+5) Run the included flashing script `flash.sh`
+6) Continue to [Step 2 in Usage](#Usage) for further instructions on how to use the **ESP32 Wi-Fi Penetration Tool**
 
 ## Manual Methods of Flashing 
 - The below methods really aren't neccesary. With the included flashing scripts in the release section you can easily flash your own builds;however the instructions are here if you want to follow them. :) 
@@ -79,12 +100,22 @@ idf.py -p <PORT> flash
 esptool.exe -p COM4 -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
 ```
 
-### Linux or MAC OS
+### Linux 
 1) Download [`esptool`](https://github.com/espressif/esptool)
+2) Ensure you set ESPTool as executable by running `chmod +x ./esptool.py` from the directory you saved ESPTool to. 
 3) Put you ESP32 into download mode by holding the BOOT button while plugging it into the PC
-3) You can flash the project with the following command replacing `ttyS5` with the serial port your ESP32 is connected to. 
+4) You can flash the project with the following command replacing `ttyS5` with the serial port your ESP32 is connected to. 
 ```python
 esptool.py -p /dev/ttyS5 -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
+```
+
+### MAC OS
+1) Download [`esptool`](https://github.com/espressif/esptool)
+2) Ensure you set ESPTool as executable by running `chmod +x ./esptool.py` from the directory you saved ESPTool to. 
+3) Put you ESP32 into download mode by holding the BOOT button while plugging it into the PC
+4) You can flash the project with the following command replacing `tty.usbserial` with the serial port your ESP32 is connected to. 
+```python
+esptool.py -p /dev/tty.usbserial -b 115200 --after hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x8000 build/partition_table/partition-table.bin 0x1000 build/bootloader/bootloader.bin 0x10000 build/esp32-wifi-penetration-tool.bin
 ```
 
 # Documentation
